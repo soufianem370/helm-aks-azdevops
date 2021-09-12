@@ -6,3 +6,5 @@ variables:
   registryServerName: 'acrsoufiane.azurecr.io'
   projectName: ${{ parameters.projectName }}
   imageName: ${{ parameters.projectName }}
+  registryPassword: HTEv4S6yhiw5TJCAvPC=R8dCCh7Ns=mS
+  registryLogin: acrsoufiane
