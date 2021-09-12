@@ -7,7 +7,7 @@ variables:
       projectName: go-template
   # define 3 more variables: registryName, registryLogin and registryPassword in the Azure pipeline UI definition
 
-resources: 
+#resources: 
   #pipelines:
   #- pipeline: ci
    # source: ci
@@ -26,7 +26,7 @@ stages:
     pool:
       vmImage: ubuntu-latest
     variables:
-      k8sNamespace: $(projectName)-qa
+      k8sNamespace: qa-$(projectName)
       replicas: 1
     environment: qa-$(projectName)
     strategy:
@@ -42,7 +42,7 @@ stages:
     pool:
       vmImage: ubuntu-latest
     variables:
-      k8sNamespace: $(projectName)-prod
+      k8sNamespace: prod-$(projectName)
       replicas: 2
     environment: prod-$(projectName)
     strategy:
