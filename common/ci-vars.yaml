@@ -1,8 +1,8 @@
 parameters:
-  projectName: ''
+  projectName: 'ci-cd'
 
 variables:
   helmVersion: 3.4.1
-  registryServerName: '$(registryName).azurecr.io'
+  registryServerName: 'acrsoufiane.azurecr.io'
   projectName: ${{ parameters.projectName }}
   imageName: ${{ parameters.projectName }}
