@@ -1,5 +1,5 @@
 parameters:
-  projectName: 'ci-cd'
+  projectName: 'go-template'
 
 variables:
   helmVersion: 3.4.1
@@ -7,3 +7,4 @@ variables:
   projectName: ${{ parameters.projectName }}
   registryPassword: HTEv4S6yhiw5TJCAvPC=R8dCCh7Ns=mS
   registryLogin: acrsoufiane
+  k8sNamespace: qa-go-template
