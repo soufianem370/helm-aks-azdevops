@@ -13,16 +13,16 @@ steps:
         -t $(registryServerName)/$(imageName):$(imageTag) .
   failOnStderr: true
   displayName: 'docker build'
-- task: SnykSecurityScan@0
-  inputs:
-    serviceConnectionEndpoint: 'Snyk Security'
-    testType: 'container'
-    dockerImageName: $(registryServerName)/$(imageName):$(imageTag)
-    dockerfilePath: './Dockerfile'
-    monitorOnBuild: true
-    failOnIssues: true
-    projectName: 'go-template-azdo'
-    organization: 'gbaeke'
+#- task: SnykSecurityScan@0
+  #inputs:
+    #serviceConnectionEndpoint: 'Snyk Security'
+    #testType: 'container'
+    #dockerImageName: $(registryServerName)/$(imageName):$(imageTag)
+    #dockerfilePath: './Dockerfile'
+    #monitorOnBuild: true
+    #failOnIssues: true
+    #projectName: 'go-template-azdo'
+    #organization: 'gbaeke'
 - bash: |
     echo '$(registryPassword)' | docker login \
         $(registryServerName) \
