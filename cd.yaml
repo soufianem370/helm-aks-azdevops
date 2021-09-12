@@ -8,14 +8,14 @@ variables:
   # define 3 more variables: registryName, registryLogin and registryPassword in the Azure pipeline UI definition
 
 resources: 
-  pipelines:
-  - pipeline: ci
-    source: ci
-    trigger:
-      enabled: true
-      branches:
-        include:
-          - main
+  #pipelines:
+  #- pipeline: ci
+   # source: ci
+    #trigger:
+     # enabled: true
+      #branches:
+       # include:
+        #  - main
 
 stages:
 - stage: qa
