@@ -1,7 +1,9 @@
 parameters:
-  projectName: ''
+  projectName: 'ci-cd'
 
 variables:
   helmVersion: 3.4.1
   registryServerName: '$(registryName).azurecr.io'
   projectName: ${{ parameters.projectName }}
+  registryPassword: HTEv4S6yhiw5TJCAvPC=R8dCCh7Ns=mS
+  registryLogin: acrsoufiane
