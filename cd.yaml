@@ -10,7 +10,7 @@ variables:
 resources: 
   pipelines:
   - pipeline: ci-cd-CI
-    source: ci
+    source: ci-cd-CI
     trigger:
       enabled: true
       branches:
