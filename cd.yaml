@@ -7,7 +7,7 @@ variables:
       projectName: go-template
   # define 3 more variables: registryName, registryLogin and registryPassword in the Azure pipeline UI definition
 
-#resources: 
+resources: 
   pipelines:
   - pipeline: ci-cd-CI
     source: ci
